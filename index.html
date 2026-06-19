@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-  <title>WebAR Test</title>
+<style>
+  body {
+    margin: 0;
+  }
 
-  <style>
-    body {
-      margin: 0;
-      overflow: hidden;
-    }
-    model-viewer {
-      width: 100vw;
-      height: 100vh;
-      background-color: #f0f0f0;
-    }
-  </style>
+  model-viewer {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background: #e0e0e0;
+  }
+</style>
+
 </head>
 
 <body>
 
-  <model-viewer
-    src="./cube.glb"
-    camera-controls
-    auto-rotate
-    exposure="1"
-    shadow-intensity="1">
-  </model-viewer>
+<model-viewer
+  src="./cube.glb"
+  camera-controls
+  auto-rotate
+  style="width:100vw; height:100vh;">
+</model-viewer>
 
 </body>
 </html>
